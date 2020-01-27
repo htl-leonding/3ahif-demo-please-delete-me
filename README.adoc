@@ -1,0 +1,25 @@
+= 3ahif-demo-please-delete-me
+
+// Metadata
+firstname lastname <mail@mail-server>
+1.0, dd-mm-yyyy: Some notes
+
+// Settings
+:source-highlighter: coderay
+:icons: font
+//:sectnums:    // Nummerierung der Überschriften / section numbering
+// Refs:
+:imagesdir: images
+:sourcedir-code: src/main/java/at/htl/jdbcprimer
+:sourcedir-test: src/test/java/at/htl/jdbcprimer
+:toc:
+
+Version: {revnumber} +
+Version Date: {revdate} +
+Version Notes: {revmark} +
+Author: {Author} {email}
+
+++++
+<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+++++
+
