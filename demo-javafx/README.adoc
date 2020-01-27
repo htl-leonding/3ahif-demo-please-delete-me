@@ -1,4 +1,24 @@
 = demo-javafx
+// Metadata
+Thomas W. Stütz <mail@mail-server>
+1.0, 27-01-2020: Some notes
+
+// Settings
+:source-highlighter: coderay
+:icons: font
+//:sectnums:    // Nummerierung der Überschriften / section numbering
+// Refs:
+:imagesdir: images
+:sourcedir-code: src/main/java/at/htl/jdbcprimer
+:sourcedir-test: src/test/java/at/htl/jdbcprimer
+:toc:
+
+
+
+++++
+<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+++++
+== Create Database-Folder in Project-Folder
 
 .Datenbank starten
 ----
@@ -7,3 +27,8 @@ cd db
 /opt/db-derby-10.15.1.3-bin/bin/startNetworkServer -noSecurityManagement
 ----
 
+== Create Datasource in IDE
+
+image::derby-driver.png[]
+
+image::create-datasource.png[]
