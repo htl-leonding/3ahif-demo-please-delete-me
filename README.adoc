@@ -1,5 +1,4 @@
 = 3ahif-demo-please-delete-me
-
 // Metadata
 firstname lastname <mail@mail-server>
 1.0, dd-mm-yyyy: Some notes
@@ -23,3 +22,14 @@ Author: {Author} {email}
 <link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 ++++
 
+[plantuml,png]
+----
+@startuml
+class Person {
+  name
+}
+@enduml
+----
+
+
+image::CLD.png[]
