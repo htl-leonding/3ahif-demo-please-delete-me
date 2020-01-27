@@ -1,12 +1,18 @@
 package at.htl.demo;
 
+import at.htl.demo.jdbc.Database;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import javax.sql.DataSource;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  * JavaFX App
@@ -33,7 +39,17 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+
+        DataSource ds = Database.getDatasource();
+        try (Connection conn = ds.getConnection()) {
+            String sql = "create table test (id int primary key)";
+            try (PreparedStatement ps = conn.prepareStatement(sql)) {
+                ps.execute();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+       // launch();
     }
 
 }
